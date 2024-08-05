@@ -13,7 +13,8 @@ export default function App() {
   const [loaded, error] = useFonts({
     Inter_900Black,
     LeckerliOne_400Regular,
-    Montserrat_700Bold
+    Montserrat_700Bold,
+    'JejuGothic-Regular' : require('./assets/fonts/JejuGothic-Regular.ttf')
   });
 
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function App() {
       <Text style={{fontFamily: 'Inter_900Black'}}>Open up App.js to start working on your app!</Text>
       <Text style={{fontFamily: 'LeckerliOne_400Regular'}}>Open up App.js to start working on your app!</Text>
       <Text style={{fontFamily: 'Montserrat_700Bold'}}>Open up App.js to start working on your app!</Text>
+      <Text style={{fontFamily: 'JejuGothic-Regular'}}>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
