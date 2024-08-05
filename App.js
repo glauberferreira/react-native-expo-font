@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { Inter_900Black, useFonts } from '@expo-google-fonts/inter';
+import { Inter_900Black } from '@expo-google-fonts/inter';
+import { LeckerliOne_400Regular } from '@expo-google-fonts/leckerli-one'
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
+import { useFonts } from 'expo-font';
 
 SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   const [loaded, error] = useFonts({
     Inter_900Black,
+    LeckerliOne_400Regular
   });
 
   useEffect(() => {
@@ -25,6 +28,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <Text style={{fontFamily: 'Inter_900Black'}}>Open up App.js to start working on your app!</Text>
+      <Text style={{fontFamily: 'LeckerliOne_400Regular'}}>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
